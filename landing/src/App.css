@@ -16,10 +16,9 @@ body, html, #root {
 }
 
 
-/* --- NAVBAR STYLES (UPDATED) --- */
+/* --- NAVBAR STYLES --- */
 
-/* Navbar Container (Outer blue border) */
-/* Navbar Container (Modified margin for closer placement) */
+
 .navbar-container {
   padding: 5px; 
   max-width: 1500px; 
@@ -37,8 +36,7 @@ body, html, #root {
   font-family: 'League Spartan', sans-serif;
 }
 
-/* Logo Styling (Updated for Image) */
-/* Logo Styling (Image) - Increased size */
+
 .logo {
   display: flex;
   align-items: center;
@@ -73,34 +71,32 @@ body, html, #root {
 .nav-links a {
   text-decoration: none;
   color: #333;
-  padding: 10px 20px; /* Adjusted padding for a larger look */
-  font-size: 18px; /* Slightly larger font */
-  transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* Added border-radius to transition */
+  padding: 10px 20px; 
+  font-size: 18px; 
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s; 
   display: block; 
-  border-radius: 4px; /* Default for non-active links */
+  border-radius: 4px; 
 }
 
-/* Styling for the 'Home' button (grey background, CAPSULE SHAPE) */
 .nav-links a.active {
   background-color: #e0e0e0; 
   color: #333;
   font-weight: 600; 
-  border-radius: 25px; /* CAPSULE SHAPE - Half of height (e.g., if height is 50px, radius is 25px) */
-  padding: 10px 25px; /* Adjusted padding to fill the capsule better */
+  border-radius: 25px;
+  padding: 10px 25px; 
 }
 
 .nav-links a:not(.active):hover {
-    background-color: #f0f0f0; /* Light grey background */
-    border-radius: 25px; /* Capsule shape on hover */
+    background-color: #f0f0f0; 
+    border-radius: 25px; 
     color: #0d265a; 
     cursor: pointer;
 }
 
-/* Styling for the 'Book Now' button (grey background, CAPSULE SHAPE) */
 .book-now-btn {
   background-color: #d3d3d3; 
   color: #333;
-  padding: 10px 25px; /* Adjusted padding for larger capsule */
+  padding: 10px 25px; 
   border: none;
   border-radius: 25px; /* CAPSULE SHAPE */
   font-size: 18px; /* Slightly larger font */
@@ -145,9 +141,9 @@ body, html, #root {
 
 .renting-img {
   position: absolute;
-  right: 150px; 
-  top: 280px; 
-  width: 800px;
+  right: 80px; 
+  top: 150px; 
+  width: 750px;
   border-radius: 60px;
 }
 
