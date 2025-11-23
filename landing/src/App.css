@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&family=Abel&family=ABeeZee&display=swap');
 
 body, html, #root {
@@ -17,29 +16,109 @@ body, html, #root {
 }
 
 
-.logo-row {
+/* --- NAVBAR STYLES (UPDATED) --- */
+
+/* Navbar Container (Outer blue border) */
+/* Navbar Container (Modified margin for closer placement) */
+.navbar-container {
+  padding: 5px; 
+  max-width: 1500px; 
+  width: 95%; 
+  margin: 5px auto;
+  box-sizing: border-box; 
+}
+
+/* Main Navbar flex container */
+.navbar {
   display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 1700px;
-  margin-top: 60px;
+  justify-content: space-between; 
+  padding: 0 10px;
+  font-family: 'League Spartan', sans-serif;
 }
 
-.logo-icon{
-  width: 150px;
-  height: 150px;
-
+/* Logo Styling (Updated for Image) */
+/* Logo Styling (Image) - Increased size */
+.logo {
+  display: flex;
+  align-items: center;
+  color: #0d265a; 
+  letter-spacing: 2px;
 }
 
-.logo-text {
-  margin-left: 10px;
-  font-size: 40px;
+.logo-icon {
+  width: 160px; /* Increased from 120px to 160px */
+  height: auto;
+}
+
+
+/* Navigation Links List */
+.nav-links {
+  display: flex;
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  flex-grow: 1; 
+  /* Center the links horizontally in the available space */
+  justify-content: center; 
+  align-items: center;
+}
+
+/* Individual list item (link) */
+.nav-links li {
+  margin: 0 18px; 
+}
+
+/* Default link styling */
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px; /* Adjusted padding for a larger look */
+  font-size: 18px; /* Slightly larger font */
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* Added border-radius to transition */
+  display: block; 
+  border-radius: 4px; /* Default for non-active links */
+}
+
+/* Styling for the 'Home' button (grey background, CAPSULE SHAPE) */
+.nav-links a.active {
+  background-color: #e0e0e0; 
+  color: #333;
+  font-weight: 600; 
+  border-radius: 25px; /* CAPSULE SHAPE - Half of height (e.g., if height is 50px, radius is 25px) */
+  padding: 10px 25px; /* Adjusted padding to fill the capsule better */
+}
+
+.nav-links a:not(.active):hover {
+    background-color: #f0f0f0; /* Light grey background */
+    border-radius: 25px; /* Capsule shape on hover */
+    color: #0d265a; 
+    cursor: pointer;
+}
+
+/* Styling for the 'Book Now' button (grey background, CAPSULE SHAPE) */
+.book-now-btn {
+  background-color: #d3d3d3; 
+  color: #333;
+  padding: 10px 25px; /* Adjusted padding for larger capsule */
+  border: none;
+  border-radius: 25px; /* CAPSULE SHAPE */
+  font-size: 18px; /* Slightly larger font */
   font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, border-radius 0.3s, padding 0.3s;
+  min-width: 140px; /* Adjusted min-width */
 }
 
+.book-now-btn:hover {
+  background-color: #c0c0c0;
+}
 
+/* --- MAIN CONTENT STYLES --- */
+
+/* Main Container */
 .main {
-  margin-top: 120px;
+  margin-top: 60px; 
   max-width: 900px;
   width: 100%;
   display: flex;
@@ -47,8 +126,6 @@ body, html, #root {
   align-items: flex-start;
   align-self: flex-start;
   margin-left: 120px; 
-  
- 
 }
 
 .main-title {
@@ -56,7 +133,6 @@ body, html, #root {
   line-height: 70px;
   font-weight: 600;
   margin: 0;
-  
 }
 
 .main-description {
@@ -69,9 +145,9 @@ body, html, #root {
 
 .renting-img {
   position: absolute;
-  right: 150px;   
-  top: 280px;    
-  width: 800px;  
+  right: 150px; 
+  top: 280px; 
+  width: 800px;
   border-radius: 60px;
 }
 
@@ -110,13 +186,10 @@ body, html, #root {
   height: 18px;
 }
 
-
-
-
-
 .why-section {
   text-align: center;
   margin-top: 120px;
+  width: 100%;
 }
 
 .why-label {
@@ -160,7 +233,6 @@ body, html, #root {
 .feature-icon {
   width: 80px;
   height: 80px;
-  
 }
 
 .feature-text {
