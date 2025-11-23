@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./Footer.js"
 
 function App() {
   return (
@@ -9,12 +10,10 @@ function App() {
           
           <div className="logo">
             <img 
-              src="./rumi.jpg"
+              src="./rumi.png"
               alt="RUMI Logo"
               className="logo-icon" // Added class for image styling
             />
-            {/* Added RUMI text for clarity if image fails, though the image is the focus */}
-            {/* <span className="logo-text">RUMI</span> */} 
           </div>
 
           <ul className="nav-links">
@@ -88,6 +87,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
