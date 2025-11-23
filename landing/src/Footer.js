@@ -2,6 +2,14 @@ import "./Footer.css"
 
 // New Footer Component
 function Footer() {
+
+const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // For smooth scrolling
+    });
+  };
+
   return (
     <footer className="footer-container">
       <div className="footer-content">
@@ -35,7 +43,9 @@ function Footer() {
             </a>
           </div>
           {/* Back to Top Button */}
-          <button className="back-to-top">
+          <button className="back-to-top"
+            onClick={scrollToTop}
+          >
             <span className="arrow-up"></span>
             BACK TO TOP
           </button>
