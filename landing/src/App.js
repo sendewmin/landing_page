@@ -3,15 +3,42 @@ import "./App.css";
 function App() {
   return (
     <div className="page">
+      {/* Navbar - Sticky and wider container */}
+      <div className="navbar-container">
+        <div className="navbar"> 
+          
+          <div className="logo">
+            <img 
+              src="./rumi.jpg"
+              alt="RUMI Logo"
+              className="logo-icon" // Added class for image styling
+            />
+            {/* Added RUMI text for clarity if image fails, though the image is the focus */}
+            {/* <span className="logo-text">RUMI</span> */} 
+          </div>
 
-      
-      <div className="logo-row">
-        <div className="logo-box">
-          <img src="rumi.ico" alt="logo" className="logo-icon" />
+          <ul className="nav-links">
+            <li>
+              <a href="#" className="nav-button active">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Features</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+
+          <button className="book-now-btn">Book Now</button>
         </div>
       </div>
 
-     
+      {/* Main Content (Rest of the original code) */}
       <div className="main">
         <h1 className="main-title">
           Every room.<br />
@@ -28,27 +55,25 @@ function App() {
         <button className="find-room-btn">
           Find room
           <span className="arrow-circle">
-            <img src="/right-arrow.png" alt="arrow" className="arrow-icon" />
+            <img src="./right-arrow.png" alt="arrow" className="arrow-icon" />
           </span>
         </button>
 
-        <img src="/renting.jpg" alt="Renting" className="renting-img" />
-
+        <img src="./renting.jpg" alt="Renting" className="renting-img" />
       </div>
 
-      
       <div className="why-section">
         <div className="why-label">why us?</div>
         <div className="why-title">Seamless integration</div>
 
         <div className="features">
           <div className="feature-box">
-            <img src="ic--outline-search.svg" alt="Smooth Booking" className="feature-icon" />
+            <img src="ic--outline-search.svg" alt="Smart Search" className="feature-icon" />
             <p className="feature-text">Smart Search & Discovery</p>
           </div>
 
           <div className="feature-box">
-            <img src="ic--outline-handshake.svg" alt="Smooth Booking" className="feature-icon" />
+            <img src="ic--outline-handshake.svg" alt="Transparency" className="feature-icon" />
             <p className="feature-text">Transparency & Trust Guaranteed</p>
           </div>
 
@@ -58,12 +83,11 @@ function App() {
           </div>
 
           <div className="feature-box">
-            <img src="ic--outline-headset-mic.svg" alt="Smooth Booking" className="feature-icon" />
-            <p className="feature-text">With Intelligent Assistance</p>          
+            <img src="ic--outline-headset-mic.svg" alt="Intelligent Assistance" className="feature-icon" />
+            <p className="feature-text">With Intelligent Assistance</p>
           </div>
         </div>
       </div>
-
     </div>
   );
 }
