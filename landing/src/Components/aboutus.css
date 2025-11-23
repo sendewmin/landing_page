@@ -1,0 +1,90 @@
+.about{
+    font-family: 'Times New Roman', Times, serifS;  
+    margin-left: 10%; 
+    margin-right: 10%;
+    font-size: 20px;
+    text-align: justify;
+    
+}
+
+hr{
+    margin: 0 auto;
+}
+
+.about_topic h2{
+    text-align: center;
+    color: rgb(71, 71, 71)
+}
+
+.about_topic h1{
+    text-align: center;
+}
+
+.backed_by_container{
+    display: flex;
+}
+
+.backed_box{
+    flex:1;
+}
+
+.backed_topic{
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.num_data_container{
+    display: flex;
+}
+
+.num_topic{
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+.num_box{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    flex: 1;
+}
+
+.num_subbox h4{
+    font-size: 50px;
+}
+
+.review_container{
+    display: flex;
+}
+
+.review_box{
+    flex:1;
+}
+
+.star span{
+    font-size: 100px;
+}
+
+.review_topic{
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.star1{
+    color: gold;
+}
+
+.star2{
+    color: gold;
+}
+
+.star3{
+    color: gold;
+}
+
+.star4{
+    color: gold;
+}
+
+.star5{
+    color:gray;
+}
