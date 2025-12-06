@@ -1,5 +1,6 @@
 import "./App.css";
 import Footer from "./Footer.js"
+import Contact from "./ContactUs/Contact.js";  // import the Contact.js file from the ContactUs folder.
 
 function App() {
   return (
@@ -87,6 +88,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Contact/> 
       <Footer/>
       
     </div>
