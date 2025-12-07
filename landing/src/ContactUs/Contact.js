@@ -1,9 +1,9 @@
 
 import "./Contact.css";
-import MapImage from "./contact-us-images/Map-image.png";
-import WhatsappIcon from "./contact-us-images/whatsapp-icon.png";
-import FacebookIcon from "./contact-us-images/facebook-icon.png";
-import InstaIcon from "./contact-us-images/Insta-icon.png";
+import MapImage from "./assets/Map-image.png";
+import WhatsappIcon from "./assets/whatsapp-icon.png";
+import FacebookIcon from "./assets/facebook-icon.png";
+import InstaIcon from "./assets/Insta-icon.png";
 
 function ContactUs(){
 
@@ -42,12 +42,30 @@ function ContactUs(){
                 </div>
 
                 <div className="form">
+                    <form>
+                        <div className="form-group">
+                            <label htmlFor="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" />
+                        </div>
 
+                        <div className="form-group">
+                            <label htmlFor="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" />
+                        </div>
+
+                        <div className="form-group">
+                            <label htmlFor="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Write your message"></textarea>
+                        </div>
+
+                        <div className="submit-btn-container">
+                            <button type="submit" className="submit-button">Submit</button>
+                        </div>
+
+                    </form>  
                 </div>
 
-                <div className="submit-button">
-
-                </div>
+                
             </div>
             
         </div>
