@@ -15,9 +15,10 @@
 .title{
     border: 2px solid black;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
-
-
 
 
 .card-container{
@@ -31,11 +32,12 @@
 .left-card-container{
     border: 2px solid black;
     width:50%;
-    padding: 10px;
+    padding: 50px;
     height: 100vh;
     display:flex; /* The content inside the left card will be flexed*/
     flex-direction: column; /* The flex direction will be column*/
-    gap:20px;  /* The content inside the left card container will have gap of 20px*/
+    gap:30px;  /* The content inside the left card container will have gap of 20px*/
+    background-color: #fafafa;
     
     
 }
@@ -67,7 +69,7 @@
     width:50%;
     /* background-color: blue; */
     border: 2px solid black;
-    padding: 10px;
+    padding: 50px;
     height: 100vh;
     display:flex; /* The content inside the right card will be flexed*/
     flex-direction: column; /* The flex direction will be column*/
@@ -85,7 +87,7 @@
 }
 
 .social-icons a {
-    display: flex;           /* make anchor a flex container */
+    display: flex;    /* make anchor a flex container */
     justify-content: space-around;
     align-items: center;
 }
@@ -137,10 +139,18 @@ label {
 input, 
 textarea {
     padding: 14px;
-    border: 2px solid black;
+    border: 2px solid rgb(154, 135, 135);
     border-radius: 5px;
     font-size: 20px;
+    resize: none;
 
+}
+
+input:focus,
+textarea:focus {
+    border-color: rgb(0, 140, 255); /* blue border */
+    outline: none;                 /* remove default blue outline */
+    box-shadow: 0 0 5px rgba(0, 140, 255, 0.6); /* optional glow effect */
 }
 
 textarea {
@@ -156,7 +166,7 @@ textarea {
 
 .submit-button {  /*This is the button tag*/
     padding: 12px;
-    background-color: rgb(0, 157, 255);
+    background-color:#2982ff;
     color: black;
     border: none;
     border-radius: 5px;
@@ -198,10 +208,16 @@ textarea {
 }
 
 .icon-container img{
-    width:50%;      /* icon size */
-    height:50%;     /* force equal size */
+    width:60%;      /* icon size */
+    height:60%;     /* force equal size */
     margin: 0;          /* remove default inline spacing */
     padding: 0;
     border-radius: 5px;
 
+}
+
+.icon-container span{
+    /* border: 2px solid black; */
+    font-size: 20px;
+    font-weight: 600;
 }
