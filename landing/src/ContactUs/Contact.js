@@ -8,10 +8,30 @@ import ContactIcon from "./assets/contact-img.png";
 import EmailIcon from "./assets/email-img.png";
 
 function ContactUs(){
+    //Form js functionalities
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+
+        const name = e.target.name.value;
+        const email = e.target.email.value;
+        const message = e.target.message.value;
+
+        const subject= `Message from ${name}`;  // Subject of the email
+        const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;  // Body of the email
+        
+
+        // // Opens the default email client
+        // window.location.href = `mailto:mypersonal34432@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`; 
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=mypersonal34432@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.open(gmailUrl, "_blank");
+
+
+    }
+
 
     return(
-        <div className="contact-whole-container">
-            <div className="card-container">
+        <div id="contact-us" className="contact-whole-container">
+            <div  className="card-container">
                 <div className="left-card-container">
                     <div className="title">
                         <h1>Reach Out To Us</h1>
@@ -61,7 +81,7 @@ function ContactUs(){
                     </div>
 
                     <div className="form">
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
                                 <input type="text" id="name" name="name" placeholder="Enter your name" />
