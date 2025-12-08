@@ -201,22 +201,24 @@ textarea {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    gap: 20px;
 
 }
 
 
 .icon-container{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     gap: 10px;
     height: 100%;
     align-items: center;
     justify-content: center;
-
-    width: 150px;       /* increase this to make container bigger */
-    height: 150px;      /* adjust height */
-    
+    background-color: whitesmoke;
+    width: 170px;       /* increase this to make container bigger */
+    height: 170px;      /* adjust height */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
 }
 
 .icon-container img{
