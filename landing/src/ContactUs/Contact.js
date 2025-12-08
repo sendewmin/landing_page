@@ -27,12 +27,16 @@ function ContactUs(){
                     <div className="contact-icons">
                         <div className="icon-container">
                             <img src={ContactIcon}/>
+                            <span className="icon-title">Contact Us</span>
                             <span>011-233-1010</span>
                             <span>076-133-9090</span>
                         </div>
 
+                        <div class="vertical-divider"></div>
+
                         <div className="icon-container">
                             <img src={EmailIcon}/>
+                            <span className="icon-title">Email Us</span>
                             <span>rumi@outlook.lk</span>
                             <span>rumi@gmail.com</span>
                         </div>
