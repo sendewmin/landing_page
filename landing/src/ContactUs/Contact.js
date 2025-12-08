@@ -4,8 +4,8 @@ import MapImage from "./assets/Map-image.png";
 import WhatsappIcon from "./assets/whatsapp-icon.png";
 import FacebookIcon from "./assets/facebook-icon.png";
 import InstaIcon from "./assets/Insta-icon.png";
-import ContactIcon from "./assets/contact-us.png";
-import EmailIcon from "./assets/email-us.png";
+import ContactIcon from "./assets/contact-img.png";
+import EmailIcon from "./assets/email-img.png";
 
 function ContactUs(){
 
@@ -70,7 +70,7 @@ function ContactUs(){
 
                             <div className="form-group">
                                 <label htmlFor="message">Message</label>
-                                <textarea id="message" name="message" placeholder="Write your message"></textarea>
+                                <textarea id="message" name="message" placeholder="Write your message" rows={5}></textarea>
                             </div>
 
                             <div className="submit-btn-container">
