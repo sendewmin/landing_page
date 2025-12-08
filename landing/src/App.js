@@ -30,7 +30,7 @@ function App() {
               <a href="#">Features</a>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <a href="#contact-us">Contact Us</a>
             </li>
           </ul>
 
