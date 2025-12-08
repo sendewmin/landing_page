@@ -7,7 +7,11 @@
 .contact-whole-container{
     min-height: 100vh;
     border: 2px solid black;
-    width: 100%;    
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    padding: 40px 20px;
 }
 
 /*Title Contact Us*/
@@ -18,30 +22,36 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+   
+}
+
+.title p{
+    line-height: 1.5;
 }
 
 
 .card-container{
     display: flex;
     flex-direction: row;
-    align-items: center;
     border: 2px solid black;
     padding: 5px;
-    
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 800px; /* given a height for the div tag (card-container) which hold the left and right card. So the left and right card will expand to its parent height.*/ 
 }
 
 .left-card-container{
     border: 2px solid black;
     width:50%;
     padding: 50px;
-    height: 100vh;
     display:flex; /* The content inside the left card will be flexed*/
     flex-direction: column; /* The flex direction will be column*/
     gap:30px;  /* The content inside the left card container will have gap of 20px*/
-    background-color: #e3e2e2;
-    
-    
+    background-color: #e3e2e2; 
+    height: 100%; 
 }
+
 
 .left-card-container h1{
     font-size:3rem;
@@ -71,12 +81,11 @@
     background-color: white;
     border: 2px solid black;
     padding: 50px;
-    height: 100vh;
     display:flex; /* The content inside the right card will be flexed*/
     flex-direction: column; /* The flex direction will be column*/
     gap:30px;  /* The content inside the right card container will have gap of 20px*/
     align-items: center;
-    
+
 }
 
 .social-icons{
