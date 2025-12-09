@@ -88,7 +88,8 @@ function App() {
           </div>
         </div>
       </div>
-      <Contact/> 
+      <Contact/>
+      <Feature/> 
       <Footer/>
       
     </div>
