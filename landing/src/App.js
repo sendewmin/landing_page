@@ -1,6 +1,5 @@
 import "./App.css";
 import Footer from "./Footer.js"
-
 function App() {
   return (
     <div className="page">
@@ -87,7 +86,6 @@ function App() {
           </div>
         </div>
       </div>
-      <Feature/>
       <Footer/>
     </div>
   );
