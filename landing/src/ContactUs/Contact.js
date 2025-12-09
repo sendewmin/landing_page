@@ -41,7 +41,13 @@ function ContactUs(){
                     </div>
 
                     <div className="map-image">
-                        <img src={MapImage} alt="MapImageI192" className="card-map-image"/>
+                        {/* <img src={MapImage} alt="MapImageI192" className="card-map-image"/> */}
+                         <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5067.662628274249!2d79.852057200656!3d6.894745045165493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bdee494e9d3%3A0x629c2df0a6d82f99!2sIIT%20School%20Of%20Computing!5e0!3m2!1sen!2slk!4v1765260349607!5m2!1sen!2slk"
+                            allowFullScreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        ></iframe>
                     </div>
 
                     <div className="contact-icons">
