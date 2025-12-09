@@ -87,7 +87,6 @@ function App() {
           </div>
         </div>
       </div>
-      <Feature/>
       <Footer/>
     </div>
   );
