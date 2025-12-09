@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.contact-whole-container{
+    min-height: 100vh;
+    /* border: 2px solid black; */
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    padding: 0px 120px;
+}
+
+/*Title Contact Us*/
+
+.title{
+    /* border: 2px solid black; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "League Spartan", sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid black; */
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    /* width:85%; */
+}
+
+.left-card-container{
+    /* border: 2px solid black; */
+    width:50%;
+    padding: 30px 50px;
+    display:flex; /* The content inside the left card will be flexed*/
+    flex-direction: column; /* The flex direction will be column*/
+    /* gap:50px; The content inside the left card container will have gap of 20px */
+    background-color: #fafafa; 
+    height: 100%; 
+    justify-content: center;
+    border-top-left-radius: 16px;   /* Apply border-radius only to left corners */
+    border-bottom-left-radius: 16px;
+}
+
+
+.left-card-container h1{
+    font-size:3rem;
+}
+
+.left-card-container p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.map-image{
+    /* border: 2px solid black; */
+    width: 100%;
+    border-radius: 5%;
+    overflow: hidden;
+    
+   
+}
+.map-image iframe{
+    width:100%;
+    height: 400px;
+    border-radius: 5%;
+    padding-right: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: none;
+    padding-right: 0px;
+    
+
+}
+
+
+/* Right side for the contact us page*/
+
+.right-card-container{
+    width:50%;
+    background-color: white;
+    /* border: 2px solid black; */
+    padding: 30px 50px;
+    display:flex; /* The content inside the right card will be flexed*/
+    flex-direction: column; /* The flex direction will be column*/
+    gap:30px;  /* The content inside the right card container will have gap of 20px*/
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 16px 16px 0;
+
+
+}
+
+.social-icons{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+.social-icons a {
+    display: flex;    /* make anchor a flex container */
+    justify-content:center;
+    align-items: center;
+    transition: transform 0.2s;
+    width: 100px;  /*The width of the anchor tag which holds the social media icon*/
+    height: 100px;  /*The height of the anchor tag which holds the social media icon*/
+}
+
+.social-icons a:hover{
+    transform: translateY(-3px);
+}
+
+
+.social-icons img{
+    width:55%;
+}
+
+
+
+
+/*Form CSS styling*/
+
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 2px solid black; */
+    padding: 5px;
+    height: 80%;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);   /* soft shadow */
+    height: 100%;
+    border-radius: 16px;
+    padding: 50px;
+    
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;  /*this will make the input field come below the label field.*/
+    gap: 8px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+}
+
+input, 
+textarea {
+    padding:12px 16px;
+    border: 2px solid rgb(154, 135, 135);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: rgb(0, 140, 255); /* blue border */
+    outline: none;                 /* remove default blue outline */
+    box-shadow: 0 0 5px rgba(0, 140, 255, 0.6); /* optional glow effect */
+}
+
+textarea {
+    
+    resize: none;
+}
+
+/*Buuton CSS styling*/
+.submit-btn-container{
+    /* border: 2px solid black; */
+    display: flex;    /* button will be flexed*/
+    flex-flow:row-reverse;  /*The flexed item button will be row reversed.*/
+}
+
+.submit-button {  /*This is the button tag*/
+    padding: 12px 32px;
+    background-color:#2982ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 20%;
+    transition: background-color 0.3s;
+    
+}
+
+.submit-button:hover {
+    background-color: #3367d6;
+}
+
+
+/*Contact Icons CSS styling*/
+
+.contact-icons{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.icon-container{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 200px;       /* increase this to make container bigger */
+    height: 170px;      /* adjust height */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);   /* soft shadow */
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.icon-container img{
+    width:45%;      /* icon size */
+    height:45%;     /* force equal size */
+    margin: 0;          /* remove default inline spacing */
+    padding: 0;
+    border-radius: 5px;
+
+}
+
+.icon-container span{
+    /* border: 2px solid black; */
+    font-size: 20px;
+    color: #1e1d1d;
+    
+}
+
+.icon-container:hover{
+    transform: translateY(-3px);
+}
+
+.icon-title{
+    /* border: 2px solid black; */
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+/* Vertical Bar*/
+
+.vertical-divider {
+    width: 1px;  /* The thickness of the line*/
+    background-color: #333;
+    height: 140px;
+    align-self: center;
+}
