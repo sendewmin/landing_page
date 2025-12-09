@@ -1,6 +1,6 @@
 import "./App.css";
 import Footer from "./Footer.js"
-
+import Feature from "./Feature.js"
 function App() {
   return (
     <div className="page">
