@@ -68,13 +68,13 @@ function ContactUs(){
 
                     <div className="social-icons">
                         
-                        <a href="#">
+                        <a href="https://wa.me/94788804005" target="_blank">
                             <img src={WhatsappIcon} alt="whatsapp"/>
                         </a>
-                        <a href="#">
+                        <a href="https://web.facebook.com/iitsl/?_rdc=1&_rdr#" target="_blank">
                             <img src={FacebookIcon} alt="facebook"/>
                         </a>
-                        <a href="#">
+                        <a href="https://www.instagram.com/iitlife/" target="_blank">
                             <img src={InstaIcon} alt="instagram"/>
                         </a>
 
