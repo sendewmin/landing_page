@@ -1,6 +1,7 @@
 import "./App.css";
 import Footer from "./Footer.js"
 import Contact from "./ContactUs/Contact.js";  // import the Contact.js file from the ContactUs folder.
+import Feature from "./Feature.js";
 
 function App() {
   return (
