@@ -1,0 +1,244 @@
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&family=Abel&family=ABeeZee&display=swap');
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-family: 'League Spartan', sans-serif;
+}
+
+
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* --- NAVBAR STYLES --- */
+
+
+.navbar-container {
+  padding: 5px; 
+  max-width: 1500px; 
+  width: 95%; 
+  margin: 5px auto;
+  box-sizing: border-box; 
+}
+
+/* Main Navbar flex container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0 10px;
+  font-family: 'League Spartan', sans-serif;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #0d265a; 
+  letter-spacing: 2px;
+}
+
+.logo-icon {
+  width: 160px; /* Increased from 120px to 160px */
+  height: auto;
+}
+
+
+/* Navigation Links List */
+.nav-links {
+  display: flex;
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  flex-grow: 1; 
+  /* Center the links horizontally in the available space */
+  justify-content: center; 
+  align-items: center;
+}
+
+/* Individual list item (link) */
+.nav-links li {
+  margin: 0 18px; 
+}
+
+/* Default link styling */
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px; 
+  font-size: 18px; 
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s; 
+  display: block; 
+  border-radius: 4px; 
+}
+
+.nav-links a.active {
+  background-color: #e0e0e0; 
+  color: #333;
+  font-weight: 600; 
+  border-radius: 25px;
+  padding: 10px 25px; 
+}
+
+.nav-links a:not(.active):hover {
+    background-color: #f0f0f0; 
+    border-radius: 25px; 
+    color: #0d265a; 
+    cursor: pointer;
+}
+
+.book-now-btn {
+  background-color: #d3d3d3; 
+  color: #333;
+  padding: 10px 25px; 
+  border: none;
+  border-radius: 25px; /* CAPSULE SHAPE */
+  font-size: 18px; /* Slightly larger font */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, border-radius 0.3s, padding 0.3s;
+  min-width: 140px; /* Adjusted min-width */
+}
+
+.book-now-btn:hover {
+  background-color: #c0c0c0;
+}
+
+/* --- MAIN CONTENT STYLES --- */
+
+/* Main Container */
+.main {
+  margin-top: 60px; 
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: flex-start;
+  margin-left: 120px; 
+}
+
+.main-title {
+  font-size: 64px;
+  line-height: 70px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.main-description {
+  margin-top: 20px;
+  max-width: 500px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.renting-img {
+  position: absolute;
+  right: 80px; 
+  top: 150px; 
+  width: 750px;
+  border-radius: 60px;
+}
+
+
+.find-room-btn {
+  display: flex;
+  align-items: center;
+  gap: 230px;
+  background: #e6f8ff;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 40px;
+  font-family: "League Spartan";
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.find-room-btn:hover {
+  transform: translateY(-3px);
+}
+
+.arrow-circle {
+  width: 32px;
+  height: 32px;
+  background: #00c8ff;
+  border-radius: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.why-section {
+  text-align: center;
+  margin-top: 120px;
+  width: 100%;
+}
+
+.why-label {
+  font-family: 'Abel', sans-serif;
+  font-size: 24px;
+}
+
+.why-title {
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+
+.features {
+  margin-top: 50px;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+.feature-box {
+  width: 210px;
+  height: 240px;
+  background: #d9d9d9;
+  border-radius: 35px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  transition: transform 0.25s ease-out, box-shadow 0.25s ease-out;
+  cursor: pointer;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.feature-text {
+  margin-top: 50px;
+  width: 160px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 24px;
+}
+>>>>>>> 26f8bec557716980322195ed189388b066a50094

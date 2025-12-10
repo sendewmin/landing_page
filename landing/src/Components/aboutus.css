@@ -1,23 +1,109 @@
 .about{
     font-family: 'Times New Roman', Times, serifS;  
-    margin-left: 10%; 
-    margin-right: 10%;
-    font-size: 20px;
+    font-size:150px;
     text-align: justify;
     
 }
 
-hr{
-    margin: 0 auto;
+
+.about_topic{
+    padding-top:15%;
+    padding-bottom: 15%;
+    background: linear-gradient(180deg, #010b16 15%,rgb(109, 109, 199) 85%,#ffffff 100%);
 }
 
+.scroll-line {
+  height: 4px;
+  background: #490399;
+  border-radius: 4px;
+  width: 0;
+  margin: 0 auto;
+  transition: width 0.8s ease-out;
+  margin-right: 15%;
+}
+
+.scroll-line.grow {
+  width: 75%;
+  margin-left: 15%;
+  padding-right: -85%;
+  
+}
+
+
 .about_topic h2{
+    font-size: 45px;
     text-align: center;
-    color: rgb(71, 71, 71)
+    color: rgb(255, 255, 255)
+    
 }
 
 .about_topic h1{
+    font-size: 50px;
     text-align: center;
+    color: #ffffff;
+}
+
+.vision{
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+
+.vision h3{
+    font-size: 35px;
+}
+
+.vision p{
+    font-size: 30px;
+}
+
+.mission{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.mission h3{
+    font-size: 35px;
+}
+
+.mission p{
+    font-size: 30px;
+}
+
+.backed_by{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.backed_by h3{
+    font-size: 35px;
+}
+
+.backed_by p{
+    font-size: 30px;
+}
+
+.num_data{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.num_data h3{
+    font-size: 35px;
+}
+
+
+.review{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.review h3{
+    font-size: 35px;
+}
+
+.review p{
+    font-size: 30px;
 }
 
 .backed_by_container{
@@ -38,8 +124,8 @@ hr{
 }
 
 .num_topic{
-    margin-top: 50%;
-    margin-bottom: 50%;
+    margin-top: 80%;
+    
 }
 
 .num_box{
@@ -49,7 +135,7 @@ hr{
 }
 
 .num_subbox h4{
-    font-size: 50px;
+    font-size: 100px;
 }
 
 .review_container{
@@ -58,6 +144,10 @@ hr{
 
 .review_box{
     flex:1;
+}
+
+.star{
+    margin-top: 15%;
 }
 
 .star span{
