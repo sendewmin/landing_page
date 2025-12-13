@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;   
-    padding: 1.5rem 7.5rem;
+    padding: 2rem 6rem;
 }
 
 /*Title Contact Us*/
@@ -284,3 +284,46 @@ textarea {
     height: 8.75rem;
     align-self: center;
 }
+
+
+
+/* Media Screen*/
+@media screen and (max-width: 1024px) {
+
+    .contact-whole-container{
+        padding: 1.5rem 3rem;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+
+    .left-card-container,
+    .right-card-container{
+        width: 100%;
+    }
+
+    .left-card-container{
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .right-card-container{
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .contact-icons{
+        gap: 2.5rem;
+        flex-wrap: wrap;
+    }
+
+    .vertical-divider{
+        display: none;
+    }
+
+    .icon-container{
+        width: 11rem;
+        height: 9.5rem;
+    }
+}
+
+
