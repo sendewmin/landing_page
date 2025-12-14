@@ -6,24 +6,37 @@ import FacebookIcon from "./assets/facebook-icon.png";
 import InstaIcon from "./assets/Insta-icon.png";
 import ContactIcon from "./assets/contact-img.png";
 import EmailIcon from "./assets/email-img.png";
+import emailjs from "@emailjs/browser";
 
 function ContactUs(){
     //Form js functionalities
     const handleSubmit=(e)=>{
         e.preventDefault();
 
+        // emailjs.sendForm(service_id, templateID, formValue, publicKey);
+        emailjs.sendForm("service_cn1fp6n","template_obny0wd",e.target,"0aMjXorG4DoqGrQrK").then(
+            () => {
+                    alert("Message sent successfully!");
+                    e.target.reset();
+                },
+            (error) => {
+                    console.error(error);
+                    alert("Failed to send message",error.text);
+                }
+        );
+
         const name = e.target.name.value;
         const email = e.target.email.value;
         const message = e.target.message.value;
 
-        const subject= `Message from ${name}`;  // Subject of the email
-        const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;  // Body of the email
+        // const subject= `Message from ${name}`;  // Subject of the email
+        // const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;  // Body of the email
         
 
         // // Opens the default email client
         // window.location.href = `mailto:mypersonal34432@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`; 
-        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=mypersonal34432@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        window.open(gmailUrl, "_blank");
+        // const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=mypersonal34432@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        // window.open(gmailUrl, "_blank");
 
 
     }
@@ -90,17 +103,17 @@ function ContactUs(){
                         <form onSubmit={handleSubmit}>
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Enter your name" />
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required />
                             </div>
 
                             <div className="form-group">
                                 <label htmlFor="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Enter your email" />
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required/>
                             </div>
 
                             <div className="form-group">
                                 <label htmlFor="message">Message</label>
-                                <textarea id="message" name="message" placeholder="Write your message" rows={5}></textarea>
+                                <textarea id="message" name="message" placeholder="Write your message" rows={5} required></textarea>
                             </div>
 
                             <div className="submit-btn-container">
