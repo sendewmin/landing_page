@@ -1,13 +1,10 @@
-<<<<<<< HEAD
+
 import logo from './logo.svg';
 import './App.css';
 import AboutUs from './Components/AboutUs';
 
-function App() {
-  return (
-    <div className="App">
-      <AboutUs/>
-=======
+
+      
 import "./App.css";
 import Footer from "./Footer.js"
 import Contact from "./ContactUs/Contact.js";  // import the Contact.js file from the ContactUs folder.
@@ -99,11 +96,12 @@ function App() {
           </div>
         </div>
       </div>
+      <AboutUs/>
       <Contact/>
       <Feature/> 
       <Footer/>
       
->>>>>>> 26f8bec557716980322195ed189388b066a50094
+
     </div>
   );
 }

@@ -5,11 +5,16 @@
     
 }
 
+.container{
+    width:100%
+}
+
 
 .about_topic{
     padding-top:15%;
     padding-bottom: 15%;
-    background: linear-gradient(180deg, #010b16 15%,rgb(109, 109, 199) 85%,#ffffff 100%);
+    background: -webkit-radial-gradient(circle, #6ec1ff 0%,rgb(188, 219, 255) 50%, #ffffff 100%);
+        
 }
 
 .scroll-line {

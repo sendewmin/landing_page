@@ -60,14 +60,14 @@ function CountUp({ end, duration = 1500 }) {
 export default function AboutUs() {
   return (
     <div className="about-container">
-
+      <br />
       <div className="about_topic">
-        <br />
+        <br /><br />
         <h2>About Us</h2><br />
-        <h1>We’re giving everyone the power to find their perfect space.</h1>
-        <br />
+        <h1>We’re giving everyone the power to  <br/>find their perfect space.</h1>
+        <br /><br />
       </div>
-
+      <br /><br />
       <ScrollLine />
 
       <div className="vision">
