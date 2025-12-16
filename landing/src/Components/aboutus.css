@@ -1,0 +1,185 @@
+.about{
+    font-family: 'Times New Roman', Times, serifS;  
+    font-size:150px;
+    text-align: justify;
+    
+}
+
+.container{
+    width:100%
+}
+
+
+.about_topic{
+    padding-top:15%;
+    padding-bottom: 15%;
+    background: -webkit-radial-gradient(circle, #6ec1ff 0%,rgb(188, 219, 255) 50%, #ffffff 100%);
+        
+}
+
+.scroll-line {
+  height: 4px;
+  background: #490399;
+  border-radius: 4px;
+  width: 0;
+  margin: 0 auto;
+  transition: width 0.8s ease-out;
+  margin-right: 15%;
+}
+
+.scroll-line.grow {
+  width: 75%;
+  margin-left: 15%;
+  padding-right: -85%;
+  
+}
+
+
+.about_topic h2{
+    font-size: 45px;
+    text-align: center;
+    color: rgb(255, 255, 255)
+    
+}
+
+.about_topic h1{
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.vision{
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+
+.vision h3{
+    font-size: 35px;
+}
+
+.vision p{
+    font-size: 30px;
+}
+
+.mission{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.mission h3{
+    font-size: 35px;
+}
+
+.mission p{
+    font-size: 30px;
+}
+
+.backed_by{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.backed_by h3{
+    font-size: 35px;
+}
+
+.backed_by p{
+    font-size: 30px;
+}
+
+.num_data{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.num_data h3{
+    font-size: 35px;
+}
+
+
+.review{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.review h3{
+    font-size: 35px;
+}
+
+.review p{
+    font-size: 30px;
+}
+
+.backed_by_container{
+    display: flex;
+}
+
+.backed_box{
+    flex:1;
+}
+
+.backed_topic{
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.num_data_container{
+    display: flex;
+}
+
+.num_topic{
+    margin-top: 80%;
+    
+}
+
+.num_box{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    flex: 1;
+}
+
+.num_subbox h4{
+    font-size: 100px;
+}
+
+.review_container{
+    display: flex;
+}
+
+.review_box{
+    flex:1;
+}
+
+.star{
+    margin-top: 15%;
+}
+
+.star span{
+    font-size: 100px;
+}
+
+.review_topic{
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.star1{
+    color: gold;
+}
+
+.star2{
+    color: gold;
+}
+
+.star3{
+    color: gold;
+}
+
+.star4{
+    color: gold;
+}
+
+.star5{
+    color:gray;
+}

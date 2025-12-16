@@ -1,3 +1,10 @@
+
+import logo from './rumisvg.svg';
+import './App.css';
+import AboutUs from './Components/AboutUs';
+
+
+      
 import "./App.css";
 import Footer from "./Footer.js"
 import Contact from "./ContactUs/Contact.js";  // import the Contact.js file from the ContactUs folder.
@@ -5,6 +12,7 @@ import Feature from "./Feature.js";
 
 function App() {
   return (
+
     <div className="page">
       {/* Navbar - Sticky and wider container */}
       <div className="navbar-container">
@@ -25,10 +33,10 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#aboutus">About</a>
             </li>
             <li>
-              <a href="#">Features</a>
+              <a href="#Feature">Features</a>
             </li>
             <li>
               <a href="#contact-us">Contact Us</a>
@@ -89,11 +97,15 @@ function App() {
           </div>
         </div>
       </div>
+      <AboutUs/>
       <Contact/>
       <Feature/> 
       <Footer/>
-      
     </div>
+      
+
+
+    
   );
 }
 
