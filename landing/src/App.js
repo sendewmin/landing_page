@@ -1,5 +1,5 @@
 
-import logo from './logo.svg';
+import logo from './rumisvg.svg';
 import './App.css';
 import AboutUs from './Components/AboutUs';
 
@@ -12,6 +12,7 @@ import Feature from "./Feature.js";
 
 function App() {
   return (
+
     <div className="page">
       {/* Navbar - Sticky and wider container */}
       <div className="navbar-container">
@@ -32,10 +33,10 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#aboutus">About</a>
             </li>
             <li>
-              <a href="#">Features</a>
+              <a href="#Feature">Features</a>
             </li>
             <li>
               <a href="#contact-us">Contact Us</a>
@@ -100,9 +101,11 @@ function App() {
       <Contact/>
       <Feature/> 
       <Footer/>
+    </div>
       
 
-    </div>
+
+    
   );
 }
 
