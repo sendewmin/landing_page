@@ -6,7 +6,7 @@ import FacebookIcon from "./assets/facebook-icon.png";
 import InstaIcon from "./assets/Insta-icon.png";
 import ContactIcon from "./assets/contact-img.png";
 import EmailIcon from "./assets/email-img.png";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 
 function ContactUs(){
     //Form js functionalities
@@ -14,20 +14,20 @@ function ContactUs(){
         e.preventDefault();
 
         // emailjs.sendForm(service_id, templateID, formValue, publicKey);
-        emailjs.sendForm("service_cn1fp6n","template_obny0wd",e.target,"0aMjXorG4DoqGrQrK").then(
-            () => {
-                    alert("Message sent successfully!");
-                    e.target.reset();
-                },
-            (error) => {
-                    console.error(error);
-                    alert("Failed to send message",error.text);
-                }
-        );
+        // emailjs.sendForm("service_cn1fp6n","template_obny0wd",e.target,"0aMjXorG4DoqGrQrK").then(
+        //     () => {
+        //             alert("Message sent successfully!");
+        //             e.target.reset();
+        //         },
+        //     (error) => {
+        //             console.error(error);
+        //             alert("Failed to send message",error.text);
+        //         }
+        // );
 
-        const name = e.target.name.value;
-        const email = e.target.email.value;
-        const message = e.target.message.value;
+        // const name = e.target.name.value;
+        // const email = e.target.email.value;
+        // const message = e.target.message.value;
 
         // const subject= `Message from ${name}`;  // Subject of the email
         // const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;  // Body of the email
