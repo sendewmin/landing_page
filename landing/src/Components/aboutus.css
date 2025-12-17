@@ -13,7 +13,7 @@
 .about_topic{
     padding-top:15%;
     padding-bottom: 15%;
-    background: -webkit-radial-gradient(circle, #6ec1ff 0%,rgb(188, 219, 255) 50%, #ffffff 100%);
+    
         
 }
 
@@ -38,14 +38,14 @@
 .about_topic h2{
     font-size: 45px;
     text-align: center;
-    color: rgb(255, 255, 255)
+    color: #333;
     
 }
 
 .about_topic h1{
     font-size: 50px;
     text-align: center;
-    color: #ffffff;
+    color: #333;
 }
 
 .vision{
