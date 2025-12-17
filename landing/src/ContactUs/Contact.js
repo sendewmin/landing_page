@@ -43,8 +43,8 @@ function ContactUs(){
 
 
     return(
-        <div id="contact-us" className="contact-whole-container">
-            <div  className="card-container">
+        <div  className="contact-whole-container">
+            <div id="contact-us" className="card-container">
                 <div className="left-card-container">
                     <div className="title">
                         <h1>Reach Out To Us</h1>

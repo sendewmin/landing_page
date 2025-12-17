@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;   
-    padding: 2rem 6rem;
+    padding: 50px 80px 0 80px;
 }
 
 /*Title Contact Us*/
@@ -26,7 +26,7 @@
 
 .title p{
     line-height: 1.5;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.75rem;
     font-family: "League Spartan", sans-serif;
     font-style: normal;
     font-size: 1.375rem;
@@ -60,12 +60,12 @@
 
 
 .left-card-container h1{
-    font-size:3rem;
+    font-size:1.5rem;
 }
 
 .left-card-container p{
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .map-image{
@@ -73,19 +73,16 @@
     width: 100%;
     border-radius: 5%;
     overflow: hidden;
-    
-   
 }
 
 
 .map-image iframe{
     width:100%;
-    height:25rem;
+    height:20rem;
     border-radius: 5%;
-    margin-bottom: 50px;
+    margin-bottom:  1.25rem;
     box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.15);
     border: none;
-    
 }
 
 
@@ -119,8 +116,8 @@
     justify-content:center;
     align-items: center;
     transition: transform 0.2s;
-    width: 6.25rem;  /*The width of the anchor tag which holds the social media icon*/
-    height: 6.25rem;  /*The height of the anchor tag which holds the social media icon*/
+    width: 5rem;  /*The width of the anchor tag which holds the social media icon*/
+    height: 5rem;  /*The height of the anchor tag which holds the social media icon*/
 }
 
 .social-icons a:hover{
@@ -170,7 +167,7 @@ form {
 
 label {
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #333;
 }
 
@@ -179,18 +176,17 @@ textarea {
     padding:0.75rem 1rem;
     border: 2px solid rgb(154, 135, 135);
     border-radius: 0.3125rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 input:focus,
 textarea:focus {
     border-color: rgb(0, 140, 255); /* blue border */
     outline: none;                 /* remove default blue outline */
-    box-shadow: 0 0 0.3125rem rgba(0, 140, 255, 0.6); /* optional glow effect */
+    /* box-shadow: 0 0 0.3125rem rgba(0, 140, 255, 0.6); optional glow effect */
 }
 
 textarea {
-    
     resize: none;
 }
 
@@ -207,12 +203,11 @@ textarea {
     color: white;
     border: none;
     border-radius: 0.5rem;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     width: auto;  /*The submit button is given an auto width*/
     transition: background-color 0.3s;
-    
 }
 
 .submit-button:hover {
@@ -242,15 +237,15 @@ textarea {
     justify-content: center;
     background-color: white;
     width: 12.5rem;       /* increase this to make container bigger */
-    height: 10.625rem;      /* adjust height */
+    height: 10rem;      /* adjust height */
     box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.15);   /* soft shadow */
     border-radius: 0.75rem;
     transition: transform 0.2s;
 }
 
 .icon-container img{
-    width:45%;      /* icon size */
-    height:45%;     /* force equal size */
+    width:30%;      /* icon size */
+    height:35%;     /* force equal size */
     margin: 0;          /* remove default inline spacing */
     padding: 0;
     border-radius: 0.3125rem;
@@ -259,7 +254,7 @@ textarea {
 
 .icon-container span{
     /* border: 2px solid black; */
-    font-size: 1.25rem;
+    font-size: 0.9rem;
     color: #1e1d1d;
     
 }
@@ -270,7 +265,6 @@ textarea {
 
 .icon-title{
     /* border: 2px solid black; */
-    font-size: 1.25rem;
     font-weight: 600;
 }
 
@@ -313,7 +307,7 @@ textarea {
 
     .contact-icons{
         gap: 2.5rem;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     .vertical-divider{
