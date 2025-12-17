@@ -1,5 +1,5 @@
 
-import logo from './rumisvg.svg';
+import logo from './Rumi transparent.png';
 import './App.css';
 import AboutUs from './Components/AboutUs';
 
@@ -20,7 +20,7 @@ function App() {
           
           <div className="logo">
             <img 
-              src="./rumi transparent.png"
+              src={logo}
               alt="RUMI Logo"
               className="logo-icon" // Added class for image styling
             />
