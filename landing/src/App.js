@@ -20,7 +20,7 @@ function App() {
           
           <div className="logo">
             <img 
-              src="./rumi.png"
+              src="./rumi transparent.png"
               alt="RUMI Logo"
               className="logo-icon" // Added class for image styling
             />
